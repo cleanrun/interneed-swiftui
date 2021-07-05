@@ -9,21 +9,59 @@
 /* Begin PBXBuildFile section */
 		EC61F1032690B1ED00728C86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61F1022690B1ED00728C86 /* AppDelegate.swift */; };
 		EC61F1052690B1ED00728C86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61F1042690B1ED00728C86 /* SceneDelegate.swift */; };
-		EC61F1072690B1ED00728C86 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61F1062690B1ED00728C86 /* ContentView.swift */; };
 		EC61F1092690B1F100728C86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC61F1082690B1F100728C86 /* Assets.xcassets */; };
 		EC61F10C2690B1F100728C86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC61F10B2690B1F100728C86 /* Preview Assets.xcassets */; };
 		EC61F10F2690B1F100728C86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC61F10D2690B1F100728C86 /* LaunchScreen.storyboard */; };
+		EC7DEF542692CE4000FFE567 /* Manrope-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC7DEF4D2692CE4000FFE567 /* Manrope-ExtraBold.ttf */; };
+		EC7DEF552692CE4000FFE567 /* Manrope-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC7DEF4E2692CE4000FFE567 /* Manrope-ExtraLight.ttf */; };
+		EC7DEF562692CE4000FFE567 /* Manrope-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC7DEF4F2692CE4000FFE567 /* Manrope-Medium.ttf */; };
+		EC7DEF572692CE4000FFE567 /* Manrope-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC7DEF502692CE4000FFE567 /* Manrope-Light.ttf */; };
+		EC7DEF582692CE4000FFE567 /* Manrope-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC7DEF512692CE4000FFE567 /* Manrope-Bold.ttf */; };
+		EC7DEF592692CE4000FFE567 /* Manrope-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC7DEF522692CE4000FFE567 /* Manrope-Regular.ttf */; };
+		EC7DEF5A2692CE4000FFE567 /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC7DEF532692CE4000FFE567 /* Manrope-SemiBold.ttf */; };
+		EC7DEF612692D9D100FFE567 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF602692D9D100FFE567 /* OnboardingView.swift */; };
+		EC7DEF632692D9DC00FFE567 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF622692D9DC00FFE567 /* LoginView.swift */; };
+		EC7DEF652692D9E600FFE567 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF642692D9E600FFE567 /* MainTabView.swift */; };
+		EC7DEF672692D9EF00FFE567 /* DetailCompanyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF662692D9EF00FFE567 /* DetailCompanyView.swift */; };
+		EC7DEF692692D9F900FFE567 /* HiringListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF682692D9F900FFE567 /* HiringListView.swift */; };
+		EC7DEF6C2692DA1500FFE567 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF6B2692DA1500FFE567 /* HomeView.swift */; };
+		EC7DEF6F2692DA2F00FFE567 /* ApplicantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF6E2692DA2F00FFE567 /* ApplicantsView.swift */; };
+		EC7DEF722692DA3C00FFE567 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF712692DA3C00FFE567 /* EventsView.swift */; };
+		EC7DEF742692DA5E00FFE567 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF732692DA5E00FFE567 /* Config.swift */; };
+		EC7DEF762692E1E700FFE567 /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF752692E1E700FFE567 /* OnboardingPageView.swift */; };
+		EC7DEF792692E55400FFE567 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF782692E55400FFE567 /* Font+Extension.swift */; };
+		EC7DEF7B2692E97100FFE567 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF7A2692E97100FFE567 /* Color+Extension.swift */; };
+		EC7DEF7E2692ECED00FFE567 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF7D2692ECED00FFE567 /* ButtonStyles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EC61F0FF2690B1ED00728C86 /* interneed-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "interneed-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC61F1022690B1ED00728C86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC61F1042690B1ED00728C86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EC61F1062690B1ED00728C86 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EC61F1082690B1F100728C86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC61F10B2690B1F100728C86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EC61F10E2690B1F100728C86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC61F1102690B1F100728C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC7DEF4D2692CE4000FFE567 /* Manrope-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-ExtraBold.ttf"; sourceTree = "<group>"; };
+		EC7DEF4E2692CE4000FFE567 /* Manrope-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-ExtraLight.ttf"; sourceTree = "<group>"; };
+		EC7DEF4F2692CE4000FFE567 /* Manrope-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Medium.ttf"; sourceTree = "<group>"; };
+		EC7DEF502692CE4000FFE567 /* Manrope-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Light.ttf"; sourceTree = "<group>"; };
+		EC7DEF512692CE4000FFE567 /* Manrope-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Bold.ttf"; sourceTree = "<group>"; };
+		EC7DEF522692CE4000FFE567 /* Manrope-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Regular.ttf"; sourceTree = "<group>"; };
+		EC7DEF532692CE4000FFE567 /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
+		EC7DEF602692D9D100FFE567 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		EC7DEF622692D9DC00FFE567 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = "interneed-swiftui/View/Onboarding/LoginView.swift"; sourceTree = SOURCE_ROOT; };
+		EC7DEF642692D9E600FFE567 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		EC7DEF662692D9EF00FFE567 /* DetailCompanyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailCompanyView.swift; path = "interneed-swiftui/View/Main Tab/DetailCompanyView.swift"; sourceTree = SOURCE_ROOT; };
+		EC7DEF682692D9F900FFE567 /* HiringListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HiringListView.swift; path = "interneed-swiftui/View/Detail Company/HiringListView.swift"; sourceTree = SOURCE_ROOT; };
+		EC7DEF6B2692DA1500FFE567 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EC7DEF6E2692DA2F00FFE567 /* ApplicantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicantsView.swift; sourceTree = "<group>"; };
+		EC7DEF712692DA3C00FFE567 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
+		EC7DEF732692DA5E00FFE567 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		EC7DEF752692E1E700FFE567 /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
+		EC7DEF782692E55400FFE567 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
+		EC7DEF7A2692E97100FFE567 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		EC7DEF7D2692ECED00FFE567 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +94,13 @@
 		EC61F1012690B1ED00728C86 /* interneed-swiftui */ = {
 			isa = PBXGroup;
 			children = (
-				EC61F1022690B1ED00728C86 /* AppDelegate.swift */,
-				EC61F1042690B1ED00728C86 /* SceneDelegate.swift */,
-				EC61F1062690B1ED00728C86 /* ContentView.swift */,
-				EC61F1082690B1F100728C86 /* Assets.xcassets */,
-				EC61F10D2690B1F100728C86 /* LaunchScreen.storyboard */,
+				EC7DEF462692C77100FFE567 /* LIfe Cycle */,
+				EC7DEF492692C79000FFE567 /* Utilities */,
+				EC7DEF7F2692F5A000FFE567 /* Model */,
+				EC7DEF482692C78B00FFE567 /* View Model */,
+				EC7DEF472692C78200FFE567 /* View */,
+				EC7DEF4A2692C7A200FFE567 /* Storyboard */,
+				EC7DEF4B2692CE1100FFE567 /* Assets */,
 				EC61F1102690B1F100728C86 /* Info.plist */,
 				EC61F10A2690B1F100728C86 /* Preview Content */,
 			);
@@ -73,6 +113,167 @@
 				EC61F10B2690B1F100728C86 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EC7DEF462692C77100FFE567 /* LIfe Cycle */ = {
+			isa = PBXGroup;
+			children = (
+				EC61F1042690B1ED00728C86 /* SceneDelegate.swift */,
+				EC61F1022690B1ED00728C86 /* AppDelegate.swift */,
+			);
+			path = "LIfe Cycle";
+			sourceTree = "<group>";
+		};
+		EC7DEF472692C78200FFE567 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC7DEF7C2692ECAF00FFE567 /* Custom Views */,
+				EC7DEF5F2692D9C100FFE567 /* Hiring List */,
+				EC7DEF5E2692D9B700FFE567 /* Detail Company */,
+				EC7DEF5D2692D98900FFE567 /* Main Tab */,
+				EC7DEF5C2692D98400FFE567 /* Authentication */,
+				EC7DEF5B2692D97B00FFE567 /* Onboarding */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC7DEF482692C78B00FFE567 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		EC7DEF492692C79000FFE567 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EC7DEF772692E52400FFE567 /* Extension */,
+				EC7DEF732692DA5E00FFE567 /* Config.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EC7DEF4A2692C7A200FFE567 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				EC61F10D2690B1F100728C86 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		EC7DEF4B2692CE1100FFE567 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EC7DEF4C2692CE2100FFE567 /* Fonts */,
+				EC61F1082690B1F100728C86 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		EC7DEF4C2692CE2100FFE567 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EC7DEF512692CE4000FFE567 /* Manrope-Bold.ttf */,
+				EC7DEF4D2692CE4000FFE567 /* Manrope-ExtraBold.ttf */,
+				EC7DEF4E2692CE4000FFE567 /* Manrope-ExtraLight.ttf */,
+				EC7DEF502692CE4000FFE567 /* Manrope-Light.ttf */,
+				EC7DEF4F2692CE4000FFE567 /* Manrope-Medium.ttf */,
+				EC7DEF522692CE4000FFE567 /* Manrope-Regular.ttf */,
+				EC7DEF532692CE4000FFE567 /* Manrope-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EC7DEF5B2692D97B00FFE567 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EC7DEF602692D9D100FFE567 /* OnboardingView.swift */,
+				EC7DEF752692E1E700FFE567 /* OnboardingPageView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		EC7DEF5C2692D98400FFE567 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				EC7DEF622692D9DC00FFE567 /* LoginView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		EC7DEF5D2692D98900FFE567 /* Main Tab */ = {
+			isa = PBXGroup;
+			children = (
+				EC7DEF702692DA3200FFE567 /* Events */,
+				EC7DEF6D2692DA1900FFE567 /* Applicants */,
+				EC7DEF6A2692DA0300FFE567 /* Home */,
+				EC7DEF642692D9E600FFE567 /* MainTabView.swift */,
+			);
+			path = "Main Tab";
+			sourceTree = "<group>";
+		};
+		EC7DEF5E2692D9B700FFE567 /* Detail Company */ = {
+			isa = PBXGroup;
+			children = (
+				EC7DEF662692D9EF00FFE567 /* DetailCompanyView.swift */,
+			);
+			path = "Detail Company";
+			sourceTree = "<group>";
+		};
+		EC7DEF5F2692D9C100FFE567 /* Hiring List */ = {
+			isa = PBXGroup;
+			children = (
+				EC7DEF682692D9F900FFE567 /* HiringListView.swift */,
+			);
+			path = "Hiring List";
+			sourceTree = "<group>";
+		};
+		EC7DEF6A2692DA0300FFE567 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EC7DEF6B2692DA1500FFE567 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EC7DEF6D2692DA1900FFE567 /* Applicants */ = {
+			isa = PBXGroup;
+			children = (
+				EC7DEF6E2692DA2F00FFE567 /* ApplicantsView.swift */,
+			);
+			path = Applicants;
+			sourceTree = "<group>";
+		};
+		EC7DEF702692DA3200FFE567 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				EC7DEF712692DA3C00FFE567 /* EventsView.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		EC7DEF772692E52400FFE567 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EC7DEF782692E55400FFE567 /* Font+Extension.swift */,
+				EC7DEF7A2692E97100FFE567 /* Color+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EC7DEF7C2692ECAF00FFE567 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC7DEF7D2692ECED00FFE567 /* ButtonStyles.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		EC7DEF7F2692F5A000FFE567 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,9 +333,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC7DEF5A2692CE4000FFE567 /* Manrope-SemiBold.ttf in Resources */,
+				EC7DEF562692CE4000FFE567 /* Manrope-Medium.ttf in Resources */,
 				EC61F10F2690B1F100728C86 /* LaunchScreen.storyboard in Resources */,
+				EC7DEF572692CE4000FFE567 /* Manrope-Light.ttf in Resources */,
+				EC7DEF542692CE4000FFE567 /* Manrope-ExtraBold.ttf in Resources */,
+				EC7DEF582692CE4000FFE567 /* Manrope-Bold.ttf in Resources */,
+				EC7DEF592692CE4000FFE567 /* Manrope-Regular.ttf in Resources */,
 				EC61F10C2690B1F100728C86 /* Preview Assets.xcassets in Resources */,
 				EC61F1092690B1F100728C86 /* Assets.xcassets in Resources */,
+				EC7DEF552692CE4000FFE567 /* Manrope-ExtraLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,9 +353,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC7DEF6C2692DA1500FFE567 /* HomeView.swift in Sources */,
+				EC7DEF7B2692E97100FFE567 /* Color+Extension.swift in Sources */,
 				EC61F1032690B1ED00728C86 /* AppDelegate.swift in Sources */,
+				EC7DEF612692D9D100FFE567 /* OnboardingView.swift in Sources */,
+				EC7DEF672692D9EF00FFE567 /* DetailCompanyView.swift in Sources */,
+				EC7DEF742692DA5E00FFE567 /* Config.swift in Sources */,
 				EC61F1052690B1ED00728C86 /* SceneDelegate.swift in Sources */,
-				EC61F1072690B1ED00728C86 /* ContentView.swift in Sources */,
+				EC7DEF762692E1E700FFE567 /* OnboardingPageView.swift in Sources */,
+				EC7DEF632692D9DC00FFE567 /* LoginView.swift in Sources */,
+				EC7DEF6F2692DA2F00FFE567 /* ApplicantsView.swift in Sources */,
+				EC7DEF652692D9E600FFE567 /* MainTabView.swift in Sources */,
+				EC7DEF792692E55400FFE567 /* Font+Extension.swift in Sources */,
+				EC7DEF722692DA3C00FFE567 /* EventsView.swift in Sources */,
+				EC7DEF7E2692ECED00FFE567 /* ButtonStyles.swift in Sources */,
+				EC7DEF692692D9F900FFE567 /* HiringListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,14 +511,16 @@
 				DEVELOPMENT_TEAM = 6J2XDDYT2W;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "interneed-swiftui/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cleanrun.interneed-swiftui";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,14 +534,16 @@
 				DEVELOPMENT_TEAM = 6J2XDDYT2W;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "interneed-swiftui/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cleanrun.interneed-swiftui";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
