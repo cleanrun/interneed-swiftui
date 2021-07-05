@@ -12,6 +12,8 @@ extension Color {
     static let APP_ORANGE = Color("App Orange")
     static let APP_RED = Color("App Red")
     static let BACKGROUND_BLUE = Color("Background Blue")
+    static let BACKGROUND_BLUE_2 = Color("Background Blue 2")
+    static let BACKGROUND_TEXT_FIELD = Color("Background Text Field")
     static let GOJEK_GREEN = Color("Gojek Green")
     static let GOOGLE_BLUE = Color("Google Blue")
     static let TEXT_BLACK = Color("Text Black")

@@ -32,6 +32,11 @@
 		EC7DEF792692E55400FFE567 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF782692E55400FFE567 /* Font+Extension.swift */; };
 		EC7DEF7B2692E97100FFE567 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF7A2692E97100FFE567 /* Color+Extension.swift */; };
 		EC7DEF7E2692ECED00FFE567 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF7D2692ECED00FFE567 /* ButtonStyles.swift */; };
+		EC7DEF83269331E400FFE567 /* INTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF82269331E400FFE567 /* INTextField.swift */; };
+		EC7DEF8626933FAD00FFE567 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF8526933FAD00FFE567 /* AccountView.swift */; };
+		EC7DEF882693412D00FFE567 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF872693412D00FFE567 /* UIImage+Extension.swift */; };
+		EC7DEF8B26936E0000FFE567 /* ActivelyHiringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF8A26936E0000FFE567 /* ActivelyHiringCell.swift */; };
+		EC7DEF8D269372C000FFE567 /* NewInternshipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF8C269372C000FFE567 /* NewInternshipCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +67,11 @@
 		EC7DEF782692E55400FFE567 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
 		EC7DEF7A2692E97100FFE567 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		EC7DEF7D2692ECED00FFE567 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		EC7DEF82269331E400FFE567 /* INTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INTextField.swift; sourceTree = "<group>"; };
+		EC7DEF8526933FAD00FFE567 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		EC7DEF872693412D00FFE567 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		EC7DEF8A26936E0000FFE567 /* ActivelyHiringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivelyHiringCell.swift; sourceTree = "<group>"; };
+		EC7DEF8C269372C000FFE567 /* NewInternshipCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewInternshipCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +214,7 @@
 		EC7DEF5D2692D98900FFE567 /* Main Tab */ = {
 			isa = PBXGroup;
 			children = (
+				EC7DEF8426933F9A00FFE567 /* Account */,
 				EC7DEF702692DA3200FFE567 /* Events */,
 				EC7DEF6D2692DA1900FFE567 /* Applicants */,
 				EC7DEF6A2692DA0300FFE567 /* Home */,
@@ -231,6 +242,7 @@
 		EC7DEF6A2692DA0300FFE567 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				EC7DEF8926936DF000FFE567 /* Cells */,
 				EC7DEF6B2692DA1500FFE567 /* HomeView.swift */,
 			);
 			path = Home;
@@ -257,6 +269,7 @@
 			children = (
 				EC7DEF782692E55400FFE567 /* Font+Extension.swift */,
 				EC7DEF7A2692E97100FFE567 /* Color+Extension.swift */,
+				EC7DEF872693412D00FFE567 /* UIImage+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -265,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				EC7DEF7D2692ECED00FFE567 /* ButtonStyles.swift */,
+				EC7DEF82269331E400FFE567 /* INTextField.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -274,6 +288,23 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EC7DEF8426933F9A00FFE567 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				EC7DEF8526933FAD00FFE567 /* AccountView.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		EC7DEF8926936DF000FFE567 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EC7DEF8A26936E0000FFE567 /* ActivelyHiringCell.swift */,
+				EC7DEF8C269372C000FFE567 /* NewInternshipCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,9 +384,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC7DEF8D269372C000FFE567 /* NewInternshipCell.swift in Sources */,
 				EC7DEF6C2692DA1500FFE567 /* HomeView.swift in Sources */,
 				EC7DEF7B2692E97100FFE567 /* Color+Extension.swift in Sources */,
+				EC7DEF8B26936E0000FFE567 /* ActivelyHiringCell.swift in Sources */,
 				EC61F1032690B1ED00728C86 /* AppDelegate.swift in Sources */,
+				EC7DEF882693412D00FFE567 /* UIImage+Extension.swift in Sources */,
+				EC7DEF8626933FAD00FFE567 /* AccountView.swift in Sources */,
 				EC7DEF612692D9D100FFE567 /* OnboardingView.swift in Sources */,
 				EC7DEF672692D9EF00FFE567 /* DetailCompanyView.swift in Sources */,
 				EC7DEF742692DA5E00FFE567 /* Config.swift in Sources */,
@@ -365,6 +400,7 @@
 				EC7DEF6F2692DA2F00FFE567 /* ApplicantsView.swift in Sources */,
 				EC7DEF652692D9E600FFE567 /* MainTabView.swift in Sources */,
 				EC7DEF792692E55400FFE567 /* Font+Extension.swift in Sources */,
+				EC7DEF83269331E400FFE567 /* INTextField.swift in Sources */,
 				EC7DEF722692DA3C00FFE567 /* EventsView.swift in Sources */,
 				EC7DEF7E2692ECED00FFE567 /* ButtonStyles.swift in Sources */,
 				EC7DEF692692D9F900FFE567 /* HiringListView.swift in Sources */,

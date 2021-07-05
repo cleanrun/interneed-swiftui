@@ -13,6 +13,7 @@ final class INImageName {
     static let BANNER_ONBOARDING = "banner_onboarding"
     static let BANNER_ULTRAMARINE = "banner_ultramarine"
     
+    static let IC_ACCOUNT_ACTIVE = "ic_account_active"
     static let IC_ACCOUNT_INACTIVE = "ic_account_inactive"
     static let IC_APPLICANTS_ACTIVE = "ic_applicants_active"
     static let IC_APPLICANTS_INACTIVE = "ic_applicants_inactive"
