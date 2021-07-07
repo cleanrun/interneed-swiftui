@@ -37,6 +37,10 @@
 		EC7DEF882693412D00FFE567 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF872693412D00FFE567 /* UIImage+Extension.swift */; };
 		EC7DEF8B26936E0000FFE567 /* ActivelyHiringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF8A26936E0000FFE567 /* ActivelyHiringCell.swift */; };
 		EC7DEF8D269372C000FFE567 /* NewInternshipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF8C269372C000FFE567 /* NewInternshipCell.swift */; };
+		ECD8DA0A26955E4600BE38F4 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD8DA0926955E4600BE38F4 /* View+Extension.swift */; };
+		ECD94E3D2693F0D200B0BDFB /* ApplicantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD94E3C2693F0D200B0BDFB /* ApplicantCell.swift */; };
+		ECD94E402693F40A00B0BDFB /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD94E3F2693F40A00B0BDFB /* EventCell.swift */; };
+		ECD94E422693FBE600B0BDFB /* INSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD94E412693FBE600B0BDFB /* INSegmentedControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +76,10 @@
 		EC7DEF872693412D00FFE567 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		EC7DEF8A26936E0000FFE567 /* ActivelyHiringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivelyHiringCell.swift; sourceTree = "<group>"; };
 		EC7DEF8C269372C000FFE567 /* NewInternshipCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewInternshipCell.swift; sourceTree = "<group>"; };
+		ECD8DA0926955E4600BE38F4 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		ECD94E3C2693F0D200B0BDFB /* ApplicantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicantCell.swift; sourceTree = "<group>"; };
+		ECD94E3F2693F40A00B0BDFB /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		ECD94E412693FBE600B0BDFB /* INSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INSegmentedControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +259,7 @@
 		EC7DEF6D2692DA1900FFE567 /* Applicants */ = {
 			isa = PBXGroup;
 			children = (
+				ECD94E3B2693F0B900B0BDFB /* Cells */,
 				EC7DEF6E2692DA2F00FFE567 /* ApplicantsView.swift */,
 			);
 			path = Applicants;
@@ -259,6 +268,7 @@
 		EC7DEF702692DA3200FFE567 /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				ECD94E3E2693F3FC00B0BDFB /* Cells */,
 				EC7DEF712692DA3C00FFE567 /* EventsView.swift */,
 			);
 			path = Events;
@@ -270,6 +280,7 @@
 				EC7DEF782692E55400FFE567 /* Font+Extension.swift */,
 				EC7DEF7A2692E97100FFE567 /* Color+Extension.swift */,
 				EC7DEF872693412D00FFE567 /* UIImage+Extension.swift */,
+				ECD8DA0926955E4600BE38F4 /* View+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -279,6 +290,7 @@
 			children = (
 				EC7DEF7D2692ECED00FFE567 /* ButtonStyles.swift */,
 				EC7DEF82269331E400FFE567 /* INTextField.swift */,
+				ECD94E412693FBE600B0BDFB /* INSegmentedControl.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -303,6 +315,22 @@
 			children = (
 				EC7DEF8A26936E0000FFE567 /* ActivelyHiringCell.swift */,
 				EC7DEF8C269372C000FFE567 /* NewInternshipCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		ECD94E3B2693F0B900B0BDFB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				ECD94E3C2693F0D200B0BDFB /* ApplicantCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		ECD94E3E2693F3FC00B0BDFB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				ECD94E3F2693F40A00B0BDFB /* EventCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -387,10 +415,14 @@
 				EC7DEF8D269372C000FFE567 /* NewInternshipCell.swift in Sources */,
 				EC7DEF6C2692DA1500FFE567 /* HomeView.swift in Sources */,
 				EC7DEF7B2692E97100FFE567 /* Color+Extension.swift in Sources */,
+				ECD94E3D2693F0D200B0BDFB /* ApplicantCell.swift in Sources */,
 				EC7DEF8B26936E0000FFE567 /* ActivelyHiringCell.swift in Sources */,
 				EC61F1032690B1ED00728C86 /* AppDelegate.swift in Sources */,
+				ECD94E402693F40A00B0BDFB /* EventCell.swift in Sources */,
+				ECD94E422693FBE600B0BDFB /* INSegmentedControl.swift in Sources */,
 				EC7DEF882693412D00FFE567 /* UIImage+Extension.swift in Sources */,
 				EC7DEF8626933FAD00FFE567 /* AccountView.swift in Sources */,
+				ECD8DA0A26955E4600BE38F4 /* View+Extension.swift in Sources */,
 				EC7DEF612692D9D100FFE567 /* OnboardingView.swift in Sources */,
 				EC7DEF672692D9EF00FFE567 /* DetailCompanyView.swift in Sources */,
 				EC7DEF742692DA5E00FFE567 /* Config.swift in Sources */,

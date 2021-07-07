@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ActivelyHiringCell: View {
     var body: some View {
-        ZStack {
+        ZStack(alignment: .leading) {
             Color.BACKGROUND_TEXT_FIELD
                 .cornerRadius(8)
             
@@ -66,21 +66,24 @@ struct ActivelyHiringCell: View {
                 }
                 
                 HStack {
-                    Text("Join Event")
+                    Text("Apply")
                         .font(Font.medium(10))
                         .foregroundColor(.white)
                         .lineLimit(1)
                         .padding(.horizontal, 25)
                         .padding(.vertical, 4)
                         .background(Color.TEXT_DARK.cornerRadius(30))
+                        .frame(width: .infinity)
                     
                     Text("189 Applicants")
                         .font(Font.medium(8))
                         .foregroundColor(.TEXT_DARK)
                         .lineLimit(1)
                 }
-            }
-        }.frame(width: 220, height: 176)
+            }.padding(.horizontal, 24)
+            
+            
+        }.frame(height: 176)
     }
 }
 

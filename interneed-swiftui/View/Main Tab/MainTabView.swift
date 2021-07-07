@@ -32,41 +32,37 @@ struct MainTabView: View {
         TabView(selection: $currentTab) {
             HomeView()
                 .tabItem {
-                    if currentTab == 1 {
-                        Image(INImageName.IC_HOME_ACTIVE)
-                    } else {
-                        Image(INImageName.IC_HOME_INACTIVE)
-                    }
+                    Image(currentTab == 1 ? INImageName.IC_HOME_ACTIVE : INImageName.IC_HOME_INACTIVE)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 18, height: 18)
                 }
                 .tag(1)
             
             ApplicantsView()
                 .tabItem {
-                    if currentTab == 2 {
-                        Image(INImageName.IC_APPLICANTS_ACTIVE)
-                    } else {
-                        Image(INImageName.IC_APPLICANTS_INACTIVE)
-                    }
+                    Image(currentTab == 2 ? INImageName.IC_APPLICANTS_ACTIVE : INImageName.IC_APPLICANTS_INACTIVE)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 18, height: 18)
                 }
                 .tag(2)
             
             EventsView()
                 .tabItem {
-                    if currentTab == 3 {
-                        Image(INImageName.IC_EVENT_ACTIVE)
-                    } else {
-                        Image(INImageName.IC_EVENT_INACTIVE)
-                    }
+                    Image(currentTab == 3 ? INImageName.IC_EVENT_ACTIVE : INImageName.IC_EVENT_INACTIVE)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 18, height: 18)
                 }
                 .tag(3)
             
             AccountView()
                 .tabItem {
-                    if currentTab == 4 {
-                        Image(INImageName.IC_ACCOUNT_ACTIVE)
-                    } else {
-                        Image(INImageName.IC_ACCOUNT_INACTIVE)
-                    }
+                    Image(currentTab == 4 ? INImageName.IC_ACCOUNT_ACTIVE : INImageName.IC_ACCOUNT_INACTIVE)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 18, height: 18)
                 }
                 .tag(4)
         }

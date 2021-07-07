@@ -129,6 +129,7 @@ struct HomeView: View {
                                         LazyHStack {
                                             ForEach(0...5, id: \.self) { _ in
                                                 ActivelyHiringCell()
+                                                    .frame(width: 220)
                                             }
                                         }
                                     }
