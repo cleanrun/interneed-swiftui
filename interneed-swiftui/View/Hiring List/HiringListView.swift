@@ -9,13 +9,15 @@ import SwiftUI
 
 struct HiringListView: View {
     
+    @Environment(\.presentationMode) private var mode: Binding<PresentationMode>
     @State var searchQuery = ""
+    private let internships = Internship.getAll()
     
     var body: some View {
         VStack {
             ZStack {
                 HStack {
-                    Button(action: {}) {
+                    Button(action: { self.mode.wrappedValue.dismiss() }) {
                         ZStack {
                             Color.BACKGROUND_TEXT_FIELD
                                 .cornerRadius(8)
@@ -67,13 +69,14 @@ struct HiringListView: View {
             }.padding(.bottom, 24)
             
             ScrollView(showsIndicators: false) {
-                ForEach(0...7, id: \.self) { _ in
-                    ActivelyHiringCell()
+                ForEach(internships) { internship in
+                    ActivelyHiringCell(with: internship)
                 }
             }
             
             Spacer()
         }.padding(.horizontal, 24)
+        .navigationBarHidden(true)
     }
 }
 

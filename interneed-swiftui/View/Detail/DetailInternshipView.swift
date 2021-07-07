@@ -7,15 +7,21 @@
 
 import SwiftUI
 
-struct DetailCompanyView: View {
+struct DetailInternshipView: View {
     
+    private let internship: Internship
     private let items = ["Descriptions", "About Company"]
     @State private var selection = 0
+    @Environment(\.presentationMode) private var mode: Binding<PresentationMode>
+    
+    init(with internship: Internship) {
+        self.internship = internship
+    }
     
     var body: some View {
         VStack {
             HStack {
-                Button(action: {}) {
+                Button(action: { self.mode.wrappedValue.dismiss() }) {
                     ZStack {
                         Color.BACKGROUND_TEXT_FIELD
                             .cornerRadius(8)
@@ -43,17 +49,17 @@ struct DetailCompanyView: View {
             }
             
             VStack {
-                Image(INImageName.LOGO_GOJEK)
+                Image(internship.company.logo)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 96, height: 96, alignment: .center)
                 
-                Text("UI Designer Intern")
+                Text(internship.title)
                     .font(Font.bold(20))
                     .foregroundColor(.TEXT_BLACK)
                 
                 HStack {
-                    Text("3 Months   /")
+                    Text("\(internship.duration)   /")
                         .font(Font.semiBold(14))
                         .foregroundColor(.TEXT_BLACK)
                     
@@ -62,7 +68,7 @@ struct DetailCompanyView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 13, height: 13)
                     
-                    Text("Jakarta")
+                    Text(internship.company.city)
                         .font(Font.semiBold(14))
                         .foregroundColor(.TEXT_BLACK)
                 }
@@ -87,13 +93,13 @@ struct DetailCompanyView: View {
                                     Spacer()
                                 }
                                 
-                                ForEach(0...2, id: \.self) { _ in
+                                ForEach(internship.requirements, id: \.self) { requirement in
                                     HStack(spacing: 13) {
                                         Circle()
                                             .frame(width: 8, height: 8)
                                             .foregroundColor(.GOJEK_GREEN)
                                         
-                                        Text("Proven to ever work as a UI/UX Designer or similar role.")
+                                        Text(requirement)
                                             .font(Font.medium(12))
                                             .foregroundColor(.gray)
                                         
@@ -110,20 +116,20 @@ struct DetailCompanyView: View {
 
                             VStack {
                                 HStack {
-                                    Text("Benefit :")
+                                    Text("Benefits :")
                                         .font(Font.bold(16))
                                         .foregroundColor(.TEXT_BLACK)
 
                                     Spacer()
                                 }
 
-                                ForEach(0...1, id: \.self) { _ in
+                                ForEach(internship.benefits, id: \.self) { benefit in
                                     HStack(spacing: 13) {
                                         Circle()
                                             .frame(width: 8, height: 8)
                                             .foregroundColor(.GOJEK_GREEN)
 
-                                        Text("$200 Monthly Allowance and bonus")
+                                        Text(benefit)
                                             .font(Font.medium(12))
                                             .foregroundColor(.gray)
 
@@ -138,7 +144,7 @@ struct DetailCompanyView: View {
                         Color.BACKGROUND_TEXT_FIELD
                             .cornerRadius(8)
                         
-                        Text("PT Aplikasi Karya Anak Bangsa, doing business as Gojek, is an Indonesian on-demand multi-service platform and digital payment technology group based in Jakarta. Gojek was first established in Indonesia in 2010 as a call center to connect consumers to courier delivery and two-wheeled ride-hailing services.")
+                        Text(internship.company.about)
                             .font(Font.medium(14))
                             .foregroundColor(.gray)
                             .padding(16)
@@ -154,13 +160,14 @@ struct DetailCompanyView: View {
             .frame(height: 56)
             
         }.padding(.horizontal, 24)
+        .navigationBarHidden(true)
     }
 }
 
 #if DEBUG
-struct DetailCompanyView_Previews: PreviewProvider {
+struct DetailInternshipView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailCompanyView()
+        DetailInternshipView(with: Internship.getAll()[2])
     }
 }
 #endif

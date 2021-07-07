@@ -8,6 +8,26 @@
 import SwiftUI
 
 struct ApplicantCell: View {
+    
+    private let applicant: Applicant
+    private let statusColor: Color
+    private let statusTitle: String
+    
+    init(with applicant: Applicant) {
+        self.applicant = applicant
+        switch applicant.status {
+        case .review:
+            statusColor = Color.APP_ORANGE
+            statusTitle = "In Review"
+        case .rejected:
+            statusColor = Color.APP_RED
+            statusTitle = "Rejected"
+        case .shortlisted:
+            statusColor = Color.GOJEK_GREEN
+            statusTitle = "Shortlisted"
+        }
+    }
+    
     var body: some View {
         ZStack {
             Color.BACKGROUND_TEXT_FIELD
@@ -19,7 +39,7 @@ struct ApplicantCell: View {
                         Color.white
                             .cornerRadius(8)
                          
-                        Image(INImageName.LOGO_GOJEK)
+                        Image(applicant.internship.company.logo)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 34, height: 44)
@@ -27,30 +47,30 @@ struct ApplicantCell: View {
                     }.frame(width: 64, height: 64, alignment: .center)
                     
                     VStack(alignment: .leading) {
-                        Text("UI Designer Intern")
+                        Text(applicant.internship.title)
                             .font(Font.bold(16))
                             .foregroundColor(.TEXT_BLACK)
                         
-                        Text("Gojek")
+                        Text(applicant.internship.company.name)
                             .font(Font.bold(14))
                             .foregroundColor(.TEXT_BLACK)
                     }
                 }
                 
                 HStack {
-                    Text("Applied on Juni 24, 09.07 AM")
+                    Text(applicant.applyDate)
                         .font(Font.medium(10))
                         .foregroundColor(.gray)
                     
                     Spacer()
                     
-                    Text("In Review")
+                    Text(statusTitle)
                         .font(Font.medium(10))
                         .foregroundColor(.white)
                         .lineLimit(1)
                         .padding(.horizontal, 25)
                         .padding(.vertical, 4)
-                        .background(Color.APP_ORANGE.cornerRadius(30))
+                        .background(statusColor.cornerRadius(30))
                 }
             }.padding(.horizontal, 16)
             
@@ -62,7 +82,7 @@ struct ApplicantCell: View {
 #if DEBUG
 struct ApplicantCell_Previews: PreviewProvider {
     static var previews: some View {
-        ApplicantCell().previewLayout(.sizeThatFits)
+        ApplicantCell(with: Applicant.getAll()[0]).previewLayout(.sizeThatFits)
     }
 }
 #endif

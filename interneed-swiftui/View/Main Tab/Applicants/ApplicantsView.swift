@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ApplicantsView: View {
+    
+    private let applicants = Applicant.getAll()
+    
     var body: some View {
         VStack {
             ZStack {
@@ -28,14 +31,17 @@ struct ApplicantsView: View {
             
             ScrollView(showsIndicators: false) {
                 LazyVStack {
-                    ForEach(0...7, id: \.self) { _ in
-                        ApplicantCell()
+                    ForEach(applicants) { applicant in
+                        NavigationLink(
+                            destination: DetailInternshipView(with: applicant.internship)) {
+                            ApplicantCell(with: applicant)
+                        }
                     }
                 }
             }.padding(.horizontal, 24)
             
             Spacer()
-        }
+        }.navigationBarHidden(true)
     }
 }
 

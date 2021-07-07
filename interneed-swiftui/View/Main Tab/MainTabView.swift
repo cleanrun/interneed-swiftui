@@ -29,42 +29,45 @@ struct MainTabView: View {
     }
     
     var body: some View {
-        TabView(selection: $currentTab) {
-            HomeView()
-                .tabItem {
-                    Image(currentTab == 1 ? INImageName.IC_HOME_ACTIVE : INImageName.IC_HOME_INACTIVE)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 18, height: 18)
-                }
-                .tag(1)
-            
-            ApplicantsView()
-                .tabItem {
-                    Image(currentTab == 2 ? INImageName.IC_APPLICANTS_ACTIVE : INImageName.IC_APPLICANTS_INACTIVE)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 18, height: 18)
-                }
-                .tag(2)
-            
-            EventsView()
-                .tabItem {
-                    Image(currentTab == 3 ? INImageName.IC_EVENT_ACTIVE : INImageName.IC_EVENT_INACTIVE)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 18, height: 18)
-                }
-                .tag(3)
-            
-            AccountView()
-                .tabItem {
-                    Image(currentTab == 4 ? INImageName.IC_ACCOUNT_ACTIVE : INImageName.IC_ACCOUNT_INACTIVE)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 18, height: 18)
-                }
-                .tag(4)
+        NavigationView {
+            TabView(selection: $currentTab) {
+                HomeView()
+                    .tabItem {
+                        Image(currentTab == 1 ? INImageName.IC_HOME_ACTIVE : INImageName.IC_HOME_INACTIVE)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 18, height: 18)
+                    }
+                    .tag(1)
+                
+                ApplicantsView()
+                    .tabItem {
+                        Image(currentTab == 2 ? INImageName.IC_APPLICANTS_ACTIVE : INImageName.IC_APPLICANTS_INACTIVE)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 18, height: 18)
+                    }
+                    .tag(2)
+                
+                EventsView()
+                    .tabItem {
+                        Image(currentTab == 3 ? INImageName.IC_EVENT_ACTIVE : INImageName.IC_EVENT_INACTIVE)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 18, height: 18)
+                    }
+                    .tag(3)
+                
+                AccountView()
+                    .tabItem {
+                        Image(currentTab == 4 ? INImageName.IC_ACCOUNT_ACTIVE : INImageName.IC_ACCOUNT_INACTIVE)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 18, height: 18)
+                    }
+                    .tag(4)
+                    .navigationBarHidden(true)
+            }
         }
     }
 }

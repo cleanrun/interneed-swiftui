@@ -12,4 +12,8 @@ extension View {
     func eraseToAnyView() -> AnyView {
         AnyView(self)
     }
+    
+    func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
+        clipShape(RoundedCorner(radius: radius, corners: corners))
+    }
 }

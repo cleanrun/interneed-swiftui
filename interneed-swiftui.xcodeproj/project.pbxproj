@@ -22,8 +22,6 @@
 		EC7DEF612692D9D100FFE567 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF602692D9D100FFE567 /* OnboardingView.swift */; };
 		EC7DEF632692D9DC00FFE567 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF622692D9DC00FFE567 /* LoginView.swift */; };
 		EC7DEF652692D9E600FFE567 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF642692D9E600FFE567 /* MainTabView.swift */; };
-		EC7DEF672692D9EF00FFE567 /* DetailCompanyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF662692D9EF00FFE567 /* DetailCompanyView.swift */; };
-		EC7DEF692692D9F900FFE567 /* HiringListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF682692D9F900FFE567 /* HiringListView.swift */; };
 		EC7DEF6C2692DA1500FFE567 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF6B2692DA1500FFE567 /* HomeView.swift */; };
 		EC7DEF6F2692DA2F00FFE567 /* ApplicantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF6E2692DA2F00FFE567 /* ApplicantsView.swift */; };
 		EC7DEF722692DA3C00FFE567 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF712692DA3C00FFE567 /* EventsView.swift */; };
@@ -37,6 +35,13 @@
 		EC7DEF882693412D00FFE567 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF872693412D00FFE567 /* UIImage+Extension.swift */; };
 		EC7DEF8B26936E0000FFE567 /* ActivelyHiringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF8A26936E0000FFE567 /* ActivelyHiringCell.swift */; };
 		EC7DEF8D269372C000FFE567 /* NewInternshipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DEF8C269372C000FFE567 /* NewInternshipCell.swift */; };
+		ECA6EEF22695CEBC00DAABB1 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA6EEF12695CEBC00DAABB1 /* Company.swift */; };
+		ECA6EEF42695CF9E00DAABB1 /* Internship.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA6EEF32695CF9E00DAABB1 /* Internship.swift */; };
+		ECA6EEF62695D02D00DAABB1 /* Applicant.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA6EEF52695D02D00DAABB1 /* Applicant.swift */; };
+		ECA6EEF82695D0BB00DAABB1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA6EEF72695D0BB00DAABB1 /* Event.swift */; };
+		ECA6EEFC2695DFDB00DAABB1 /* DetailInternshipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA6EEFB2695DFDB00DAABB1 /* DetailInternshipView.swift */; };
+		ECA6EEFE2695DFE100DAABB1 /* HiringListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA6EEFD2695DFE100DAABB1 /* HiringListView.swift */; };
+		ECA6EF002695E34F00DAABB1 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA6EEFF2695E34F00DAABB1 /* RoundedCorner.swift */; };
 		ECD8DA0A26955E4600BE38F4 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD8DA0926955E4600BE38F4 /* View+Extension.swift */; };
 		ECD94E3D2693F0D200B0BDFB /* ApplicantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD94E3C2693F0D200B0BDFB /* ApplicantCell.swift */; };
 		ECD94E402693F40A00B0BDFB /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD94E3F2693F40A00B0BDFB /* EventCell.swift */; };
@@ -61,8 +66,6 @@
 		EC7DEF602692D9D100FFE567 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		EC7DEF622692D9DC00FFE567 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = "interneed-swiftui/View/Onboarding/LoginView.swift"; sourceTree = SOURCE_ROOT; };
 		EC7DEF642692D9E600FFE567 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
-		EC7DEF662692D9EF00FFE567 /* DetailCompanyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailCompanyView.swift; path = "interneed-swiftui/View/Main Tab/DetailCompanyView.swift"; sourceTree = SOURCE_ROOT; };
-		EC7DEF682692D9F900FFE567 /* HiringListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HiringListView.swift; path = "interneed-swiftui/View/Detail Company/HiringListView.swift"; sourceTree = SOURCE_ROOT; };
 		EC7DEF6B2692DA1500FFE567 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EC7DEF6E2692DA2F00FFE567 /* ApplicantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicantsView.swift; sourceTree = "<group>"; };
 		EC7DEF712692DA3C00FFE567 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
@@ -76,6 +79,13 @@
 		EC7DEF872693412D00FFE567 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		EC7DEF8A26936E0000FFE567 /* ActivelyHiringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivelyHiringCell.swift; sourceTree = "<group>"; };
 		EC7DEF8C269372C000FFE567 /* NewInternshipCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewInternshipCell.swift; sourceTree = "<group>"; };
+		ECA6EEF12695CEBC00DAABB1 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		ECA6EEF32695CF9E00DAABB1 /* Internship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internship.swift; sourceTree = "<group>"; };
+		ECA6EEF52695D02D00DAABB1 /* Applicant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Applicant.swift; sourceTree = "<group>"; };
+		ECA6EEF72695D0BB00DAABB1 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		ECA6EEFB2695DFDB00DAABB1 /* DetailInternshipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInternshipView.swift; sourceTree = "<group>"; };
+		ECA6EEFD2695DFE100DAABB1 /* HiringListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiringListView.swift; sourceTree = "<group>"; };
+		ECA6EEFF2695E34F00DAABB1 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		ECD8DA0926955E4600BE38F4 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		ECD94E3C2693F0D200B0BDFB /* ApplicantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicantCell.swift; sourceTree = "<group>"; };
 		ECD94E3F2693F40A00B0BDFB /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
@@ -115,7 +125,6 @@
 				EC7DEF462692C77100FFE567 /* LIfe Cycle */,
 				EC7DEF492692C79000FFE567 /* Utilities */,
 				EC7DEF7F2692F5A000FFE567 /* Model */,
-				EC7DEF482692C78B00FFE567 /* View Model */,
 				EC7DEF472692C78200FFE567 /* View */,
 				EC7DEF4A2692C7A200FFE567 /* Storyboard */,
 				EC7DEF4B2692CE1100FFE567 /* Assets */,
@@ -147,19 +156,12 @@
 			children = (
 				EC7DEF7C2692ECAF00FFE567 /* Custom Views */,
 				EC7DEF5F2692D9C100FFE567 /* Hiring List */,
-				EC7DEF5E2692D9B700FFE567 /* Detail Company */,
+				EC7DEF5E2692D9B700FFE567 /* Detail */,
 				EC7DEF5D2692D98900FFE567 /* Main Tab */,
 				EC7DEF5C2692D98400FFE567 /* Authentication */,
 				EC7DEF5B2692D97B00FFE567 /* Onboarding */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		EC7DEF482692C78B00FFE567 /* View Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View Model";
 			sourceTree = "<group>";
 		};
 		EC7DEF492692C79000FFE567 /* Utilities */ = {
@@ -231,18 +233,18 @@
 			path = "Main Tab";
 			sourceTree = "<group>";
 		};
-		EC7DEF5E2692D9B700FFE567 /* Detail Company */ = {
+		EC7DEF5E2692D9B700FFE567 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				EC7DEF662692D9EF00FFE567 /* DetailCompanyView.swift */,
+				ECA6EEFB2695DFDB00DAABB1 /* DetailInternshipView.swift */,
 			);
-			path = "Detail Company";
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		EC7DEF5F2692D9C100FFE567 /* Hiring List */ = {
 			isa = PBXGroup;
 			children = (
-				EC7DEF682692D9F900FFE567 /* HiringListView.swift */,
+				ECA6EEFD2695DFE100DAABB1 /* HiringListView.swift */,
 			);
 			path = "Hiring List";
 			sourceTree = "<group>";
@@ -291,6 +293,7 @@
 				EC7DEF7D2692ECED00FFE567 /* ButtonStyles.swift */,
 				EC7DEF82269331E400FFE567 /* INTextField.swift */,
 				ECD94E412693FBE600B0BDFB /* INSegmentedControl.swift */,
+				ECA6EEFF2695E34F00DAABB1 /* RoundedCorner.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -298,6 +301,10 @@
 		EC7DEF7F2692F5A000FFE567 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ECA6EEF12695CEBC00DAABB1 /* Company.swift */,
+				ECA6EEF32695CF9E00DAABB1 /* Internship.swift */,
+				ECA6EEF52695D02D00DAABB1 /* Applicant.swift */,
+				ECA6EEF72695D0BB00DAABB1 /* Event.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -420,12 +427,15 @@
 				EC61F1032690B1ED00728C86 /* AppDelegate.swift in Sources */,
 				ECD94E402693F40A00B0BDFB /* EventCell.swift in Sources */,
 				ECD94E422693FBE600B0BDFB /* INSegmentedControl.swift in Sources */,
+				ECA6EEF22695CEBC00DAABB1 /* Company.swift in Sources */,
 				EC7DEF882693412D00FFE567 /* UIImage+Extension.swift in Sources */,
 				EC7DEF8626933FAD00FFE567 /* AccountView.swift in Sources */,
 				ECD8DA0A26955E4600BE38F4 /* View+Extension.swift in Sources */,
+				ECA6EEF82695D0BB00DAABB1 /* Event.swift in Sources */,
 				EC7DEF612692D9D100FFE567 /* OnboardingView.swift in Sources */,
-				EC7DEF672692D9EF00FFE567 /* DetailCompanyView.swift in Sources */,
 				EC7DEF742692DA5E00FFE567 /* Config.swift in Sources */,
+				ECA6EEFE2695DFE100DAABB1 /* HiringListView.swift in Sources */,
+				ECA6EEF62695D02D00DAABB1 /* Applicant.swift in Sources */,
 				EC61F1052690B1ED00728C86 /* SceneDelegate.swift in Sources */,
 				EC7DEF762692E1E700FFE567 /* OnboardingPageView.swift in Sources */,
 				EC7DEF632692D9DC00FFE567 /* LoginView.swift in Sources */,
@@ -434,8 +444,10 @@
 				EC7DEF792692E55400FFE567 /* Font+Extension.swift in Sources */,
 				EC7DEF83269331E400FFE567 /* INTextField.swift in Sources */,
 				EC7DEF722692DA3C00FFE567 /* EventsView.swift in Sources */,
+				ECA6EEFC2695DFDB00DAABB1 /* DetailInternshipView.swift in Sources */,
 				EC7DEF7E2692ECED00FFE567 /* ButtonStyles.swift in Sources */,
-				EC7DEF692692D9F900FFE567 /* HiringListView.swift in Sources */,
+				ECA6EF002695E34F00DAABB1 /* RoundedCorner.swift in Sources */,
+				ECA6EEF42695CF9E00DAABB1 /* Internship.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,8 @@ import SwiftUI
 
 struct EventsView: View {
     
-    @State var searchQuery = ""
+    @State private var searchQuery = ""
+    private let events = Event.getAll()
     
     var body: some View {
         VStack {
@@ -51,14 +52,14 @@ struct EventsView: View {
             
             ScrollView(showsIndicators: false) {
                 LazyVStack {
-                    ForEach(0...7, id: \.self) { _ in
-                        EventCell()
+                    ForEach(events) { event in
+                        EventCell(with: event)
                     }
                 }
             }.padding(.horizontal, 24)
             
             Spacer()
-        }
+        }.navigationBarHidden(true)
     }
 }
 

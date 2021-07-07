@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct ActivelyHiringCell: View {
+    
+    private let internship: Internship
+    
+    init(with internship: Internship) {
+        self.internship = internship
+    }
+    
     var body: some View {
         ZStack(alignment: .leading) {
             Color.BACKGROUND_TEXT_FIELD
@@ -19,7 +26,7 @@ struct ActivelyHiringCell: View {
                         Color.white
                             .cornerRadius(8)
                          
-                        Image(INImageName.LOGO_NETFLIX)
+                        Image(internship.company.logo)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 30, height: 30)
@@ -27,26 +34,26 @@ struct ActivelyHiringCell: View {
                     }.frame(width: 48, height: 48, alignment: .center)
                     
                     VStack(alignment: .leading) {
-                        Text("UX Writter Intern")
+                        Text(internship.title)
                             .font(Font.bold(14))
                             .foregroundColor(.TEXT_DARK)
                             .lineLimit(1)
                         
-                        Text("Netflix")
+                        Text(internship.company.name)
                             .font(Font.bold(12))
                             .foregroundColor(.TEXT_DARK)
                             .lineLimit(1)
                     }
                 }
                 
-                VStack() {
+                VStack(alignment: .leading) {
                     HStack {
                         Image(INImageName.IC_LOCATION)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 13, height: 13)
                         
-                        Text("Bandung")
+                        Text(internship.company.city)
                             .font(Font.medium(12))
                             .foregroundColor(.TEXT_DARK)
                             .lineLimit(1)
@@ -58,7 +65,7 @@ struct ActivelyHiringCell: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 13, height: 13)
                         
-                        Text("6 Months")
+                        Text(internship.duration)
                             .font(Font.medium(12))
                             .foregroundColor(.TEXT_DARK)
                             .lineLimit(1)
@@ -75,7 +82,7 @@ struct ActivelyHiringCell: View {
                         .background(Color.TEXT_DARK.cornerRadius(30))
                         .frame(width: .infinity)
                     
-                    Text("189 Applicants")
+                    Text("\(internship.applicants) Applicants")
                         .font(Font.medium(8))
                         .foregroundColor(.TEXT_DARK)
                         .lineLimit(1)
@@ -90,7 +97,7 @@ struct ActivelyHiringCell: View {
 #if DEBUG
 struct ActivelyHiringCell_Previews: PreviewProvider {
     static var previews: some View {
-        ActivelyHiringCell().previewLayout(.sizeThatFits)
+        ActivelyHiringCell(with: Internship.getAll()[1]).previewLayout(.sizeThatFits)
     }
 }
 #endif

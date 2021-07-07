@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct NewInternshipCell: View {
+    
+    private var internship: Internship
+    
+    init(with internship: Internship) {
+        self.internship = internship
+    }
+    
     var body: some View {
         ZStack {
             Color.BACKGROUND_TEXT_FIELD
@@ -18,7 +25,7 @@ struct NewInternshipCell: View {
                     Color.white
                         .cornerRadius(8)
                      
-                    Image(INImageName.LOGO_SLACK)
+                    Image(internship.company.logo)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 33, height: 33)
@@ -27,11 +34,11 @@ struct NewInternshipCell: View {
                 .padding(.leading, 12)
                 
                 VStack(alignment: .leading, spacing: 3) {
-                    Text("Product Manager Intern")
+                    Text(internship.title)
                         .font(Font.semiBold(14))
                         .foregroundColor(.TEXT_BLACK)
                     
-                    Text("Slack")
+                    Text(internship.company.name)
                         .font(Font.semiBold(12))
                         .foregroundColor(.TEXT_BLACK)
                     
@@ -41,7 +48,7 @@ struct NewInternshipCell: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 10, height: 10)
                         
-                        Text("Bandung")
+                        Text(internship.company.city)
                             .font(Font.medium(10))
                             .foregroundColor(.TEXT_DARK)
                             .lineLimit(1)
@@ -57,7 +64,7 @@ struct NewInternshipCell: View {
 #if DEBUG
 struct NewInternshipCell_Previews: PreviewProvider {
     static var previews: some View {
-        NewInternshipCell().previewLayout(.sizeThatFits)
+        NewInternshipCell(with: Internship.getAll()[0]).previewLayout(.sizeThatFits)
     }
 }
 #endif
